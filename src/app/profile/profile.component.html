@@ -1,0 +1,35 @@
+
+<main class="page-content">
+    <div class="container-fluid">
+      <h2>Profile</h2>
+      <hr>
+      
+      <div class="row">
+        <div class="col-md-12">
+          <table class="table table-dark"> 
+            <thead>
+              <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Profile Img</th>
+              </tr>
+            </thead>
+      
+            <tbody *ngFor="let sg of singleuser">
+              <tr>          
+                   <td>{{sg.first_name}}</td>
+                   <td>{{sg.last_name}}</td>
+                   <td>{{sg.email}}</td>
+                   <td><img [src]=sg.avatar class="rounded" height="30" width="30"></td>
+              </tr>
+            </tbody>
+          </table>
+        
+        </div>
+    
+      </div>
+    </div>
+  </main>
+  
+

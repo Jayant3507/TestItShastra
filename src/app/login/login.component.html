@@ -1,0 +1,26 @@
+<div class="col-md-6 offset-md-3">
+    <div class="card m-5 offset-md-3">
+      <h5 class="card-header">Login</h5>
+      <div class="alert alert-danger" *ngIf="error">
+         {{message}}
+      </div>
+  
+      <div class="card-body">
+          <form class="container">
+              <div class="form-group">
+                  <label for="exampleinput">UserName</label>
+                  <input type="text" class="form-control" [(ngModel)]="username" name="username" autocomplete="off">
+              </div>
+  
+              <div class="form-group">
+                  <label for="exampleinput1">Password</label>
+                  <input type="password" class="form-control" [(ngModel)]="password" name="password" autocomplete="off">
+              </div>
+  
+              <a routerLink="/home" type="submit" class="btn btn-primary mr-1 float-left" >Login</a>
+          </form>
+     </div>  
+  </div>
+  </div>
+  
+<router-outlet></router-outlet>
